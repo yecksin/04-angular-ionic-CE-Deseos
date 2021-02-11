@@ -7,5 +7,14 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
+  <ion-list>
+    <ion-item *ngFor="let item of _deseos.listas" detail>
+      <ion-label>{{item.titulo}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="warning" (click)="agregarLista()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
