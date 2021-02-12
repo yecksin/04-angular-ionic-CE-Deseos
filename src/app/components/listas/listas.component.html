@@ -1,0 +1,18 @@
+<ion-list>
+  <ion-item-sliding *ngFor="let item of lista" detail (click)="listaSeleccionada(item)">
+    <ion-item-options side="start">
+      <ion-item-option (click)="borrarLista(item)" color="danger" expandable>
+        <ion-icon name="close" slot="icon-only"></ion-icon>
+      </ion-item-option>
+  
+   
+  
+    </ion-item-options>
+    <ion-item >
+      <ion-label>{{item.titulo}}</ion-label>
+      <ion-note slot="end" color="warning">{{item.items.length}} items</ion-note>
+    </ion-item>
+  </ion-item-sliding>
+</ion-list>
+
+

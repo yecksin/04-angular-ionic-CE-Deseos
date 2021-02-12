@@ -1,9 +1,12 @@
-# TEmas
+# Temas
 - Cambiar ruta creada a un dentro de tabs.
 - Pintar list e items
 - Uso de clases para poner en tipo de datos
 - Uso de local storage
 - Find con json
+- Filter con json
+- ngmodel directo desde json
+- scope raro de lista
 # crear clase
 
 Creamos carpeta llamada models
